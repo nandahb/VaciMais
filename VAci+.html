@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaci+</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function validateForm() {
+            var password = document.getElementById("senha").value;
+            var confirmPassword = document.getElementById("confirmPassword").value;
+
+            if (password != confirmPassword) {
+                alert("As senhas não coincidem.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1>Vaci+</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#o-que-fazemos">O que fazemos</a></li>
+                    <li><a href="#quem-somos">Quem somos</a></li>
+                    <li><a href="#login">Login</a></li>
+                    <li><a href="#cadastro">Cadastro</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- O que fazemos -->
+        <section id="o-que-fazemos" class="section">
+            <div class="container">
+                <h2>O que fazemos</h2>
+                <p>A Vaci+ oferece um diferencial único ao focar não apenas na vacinação contra o COVID-19, mas também em outras vacinas importantes, como as da gripe, por exemplo. Além disso, ao incluir a vacinação de pessoas com deficiência, a empresa demonstra um compromisso com a inclusão e a saúde de todos os indivíduos. Isso mostra uma abordagem abrangente e inclusiva para atender às necessidades de diferentes grupos da sociedade.</p>
+            </div>
+        </section>
+
+        <!-- Quem somos -->
+        <section id="quem-somos" class="section">
+            <div class="container">
+                <h2>Quem somos</h2>
+                <p>Assim, surgiu a ideia de fundar a "Vaci+", uma ONG dedicada a vacinar aquelas pessoas que não tinham conseguido se vacinar durante a pandemia ou que enfrentavam dificuldades para isso. A missão da empresa era garantir que ninguém fosse deixado para trás na luta contra as doenças infecciosas.</p>
+                <!-- Mais texto aqui -->
+            </div>
+        </section>
+        <section class="vaccination-info">
+            <div class="container">
+                <h2>Informações sobre as Vacinas</h2>
+                <p>Local: Posto vasco Barcelos</p>
+                <p>Nome do Aplicador: Andrew</p>
+                <p>Vacinas Disponíveis:Gripe,Covid19,Dengue</p>
+            </div>
+        </section>
+        
+        <!-- Login -->
+        <section id="login" class="section">
+            <div class="container">
+                <h2>Login</h2>
+                <form action="vacinas.html" method="post">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="submit">Entrar</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Cadastro -->
+        <section id="cadastro" class="section">
+            <div class="container">
+                <h2>Cadastro de Novo Usuário</h2>
+                <form action="cadastro-sucesso.html" method="post" onsubmit="return validateForm()">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" required>
+                    <label for="confirmPassword">Confirme a Senha:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    <button type="submit">Cadastrar</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Vaci+</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,27 @@
+document.addEventListener('DOMContentLoaded', function() {
+    // Função para abrir e fechar a seção "O que fazemos"
+    document.getElementById('openOQueFazemos').addEventListener('click', function() {
+        document.getElementById('o-que-fazemos').classList.remove('hidden');
+        document.getElementById('closeOQueFazemos').classList.remove('hidden');
+        document.getElementById('openOQueFazemos').classList.add('hidden');
+    });
+
+    document.getElementById('closeOQueFazemos').addEventListener('click', function() {
+        document.getElementById('o-que-fazemos').classList.add('hidden');
+        document.getElementById('openOQueFazemos').classList.remove('hidden');
+        document.getElementById('closeOQueFazemos').classList.add('hidden');
+    });
+
+    // Função para abrir e fechar a seção "Quem somos"
+    document.getElementById('openQuemSomos').addEventListener('click', function() {
+        document.getElementById('quem-somos').classList.remove('hidden');
+        document.getElementById('closeQuemSomos').classList.remove('hidden');
+        document.getElementById('openQuemSomos').classList.add('hidden');
+    });
+
+    document.getElementById('closeQuemSomos').addEventListener('click', function() {
+        document.getElementById('quem-somos').classList.add('hidden');
+        document.getElementById('openQuemSomos').classList.remove('hidden');
+        document.getElementById('closeQuemSomos').classList.add('hidden');
+    });
+});

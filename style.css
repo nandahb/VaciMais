@@ -1,0 +1,84 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    background-color: CornflowerBlue; /* Cor de fundo do header alterada para CornflowerBlue */
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+.header h1 {
+    font-size: 24px;
+}
+
+.nav ul {
+    list-style-type: none;
+}
+
+.nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.section {
+    padding: 50px 0;
+}
+
+.section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.main-content {
+    background-color: #ffffff;
+    margin-top: 20px;
+    padding-bottom: 50px;
+}
+
+.vaccination-info {
+    background-color: #f8f8f8; /* Cor de fundo da seção */
+    padding: 20px 0;
+}
+
+.vaccination-info h2 {
+    color: #000000; /* Cor do título */
+    margin-bottom: 20px;
+}
+
+.vaccination-info p {
+    color: #000000; /* Cor do texto */
+    line-height: 1.6;
+}
+
+footer {
+    background-color: CornflowerBlue; /* Cor de fundo do footer alterada para CornflowerBlue */
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
